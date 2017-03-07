@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Superbet - leading supplier of sports betting data.</title>
+        <meta name="description" content="Superbet is the asia's leading supplier and provider of sports betting data services. The one-stop shop for betting, content, streaming & gaming solutions."/>
+
+        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/select2/dist/css/select2.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="vendors/bower_components/nouislider/distribute/nouislider.min.css">
+        <link rel="stylesheet" href="css/app_1.min.css">
+        <link rel="stylesheet" href="css/app_2.min.css">
+        <script src="js/page-loader.min.js" async></script>
+
+<style>
+#page-loader { background-color: #2CBEC4;}
+#header { background: #2CBEC4;}
+.header__top { background: rgba(0,0,0,0.1);}
+.top_header { min-height: 200px; max-width: 1300px; margin: 0 auto;}
+.top_header h1 { color: #fff;}
+.top_header hr { max-width: 130px; margin-left: 0;}
+.top_header p { color: #fff; margin-right:;}
+.top_header img { float: right; height: 250px;}
+@media (min-width:991px) {.header__recommended .top_header {padding: 0 70px;}}
+@media (max-width:992px) {.header__recommended .top_header {padding: 0 30px;} .top_header { min-height: auto;} .top_header hr {} .top_header img { display: none;}}
+.my-location {margin:0 auto; max-width:1300px; text-align:left; padding:0 70px; line-height:1.6em; padding-bottom:20px;}
+.card { background: none !important; box-shadow: 0 0 0 0; margin-bottom: 0;}
+#serversort:not(.tab-nav--mobile) ul { box-shadow: 0 0 0 0;}
+#serversort:not(.tab-nav--mobile) ul li a {font-size: 16px; border:1px solid #2CBEC4; border-radius:10px; margin: 0 10px;}
+#serversort:not(.tab-nav--mobile) ul li.active a { color: #fff; border-color: #2CBEC4; background: #2CBEC4;}
+.tab-nav:not(.tab-nav--mobile) ul > li > a:after,
+.tab-nav:not(.tab-nav--mobile) ul > li > a:before { background: none; display: none;}
+.products_list { margin-bottom: 0;}
+.products_list ul { list-style: none; padding: 50px 0 0;}
+.products_list ul li { list-style: none; text-align: center; margin-bottom: 30px;}
+.products_list ul img { max-width: 130px; width: auto; margin-bottom: 20px; margin: 0 auto;}
+.products_list ul li a {padding: 0 30px; display: block; color: #828282;}
+.btn-outline {color: #fff;background-image: none;background-color: transparent;border:1px solid #fff;border-radius:5px; box-shadow: 0 0 0 0 !important;}
+.btn-outline:focus, .btn-outline:hover { color: #fff;box-shadow: 0 2px 5px 0  rgba(0, 0, 0, .26) !important;}
+#footer { background: #2CBEC4;}
+</style>
+
+    </head>
+
+    <body>
+        <!-- Start page loader -->
+        <div id="page-loader">
+            <div class="page-loader__spinner"></div>
+        </div>
+        <!-- End page loader -->
+
+        <header id="header">
+            <div class="header__top">
+                <div class="container">
+                    <ul class="top-nav">
+                        <li class="dropdown top-nav__guest">
+                            <a data-toggle="dropdown" href="">Register</a>
+
+                            <form class="dropdown-menu stop-propagate">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password">
+                                    <i class="form-group__bar"></i>
+                                </div>
+
+                                <p><small>By Signing up with SuperBet, you're agreeing to our <a href="">terms and conditions</a>.</small></p>
+
+                                <button class="btn btn-primary btn-block m-t-10 m-b-10">Register</button>
+
+                                <div class="text-center"><small><a href="">Are you an Agent?</a></small></div>
+
+                                <div class="top-nav__auth">
+                                    <span>or</span>
+
+                                    <div>Sign in using</div>
+
+                                    <a href="" class="mdc-bg-blue-500">
+                                        <i class="zmdi zmdi-facebook"></i>
+                                    </a>
+
+                                    <a href="" class="mdc-bg-cyan-500">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+
+                                    <a href="" class="mdc-bg-red-400">
+                                        <i class="zmdi zmdi-google"></i>
+                                    </a>
+                                </div>
+
+                            </form>
+                        </li>
+
+                        <li class="dropdown top-nav__guest">
+                            <a data-toggle="dropdown" href="" data-rmd-action="switch-login">Login</a>
+
+                            <div class="dropdown-menu">
+                                <div class="tab-content">
+                                    <form class="tab-pane active in fade" id="top-nav-login">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email Address">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <button class="btn btn-primary btn-block m-t-10 m-b-10">Login</button>
+
+                                        <div class="text-center">
+                                            <a href="#top-nav-forgot-password" data-toggle="tab"><small>Forgot email/password?</small></a>
+                                        </div>
+
+                                        <div class="top-nav__auth">
+                                            <span>or</span>
+
+                                            <div>Sign in using</div>
+
+                                            <a href="" class="mdc-bg-blue-500">
+                                                <i class="zmdi zmdi-facebook"></i>
+                                            </a>
+
+                                            <a href="" class="mdc-bg-cyan-500">
+                                                <i class="zmdi zmdi-twitter"></i>
+                                            </a>
+
+                                            <a href="" class="mdc-bg-red-400">
+                                                <i class="zmdi zmdi-google"></i>
+                                            </a>
+                                        </div>
+                                    </form>
+
+                                    <form class="tab-pane fade forgot-password" id="top-nav-forgot-password">
+                                        <a href="#top-nav-login" class="top-nav__back" data-toggle="tab"></a>
+
+                                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Emaill Address">
+                                            <i class="form-group__bar"></i>
+                                        </div>
+
+                                        <button class="btn btn-warning btn-block">Reset Password</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--li class="pull-right top-nav__icon">
+                            <a href=""><i class="zmdi zmdi-facebook"></i></a>
+                        </li>
+                        <li class="pull-right top-nav__icon">
+                            <a href=""><i class="zmdi zmdi-twitter"></i></a>
+                        </li>
+                        <li class="pull-right top-nav__icon">
+                            <a href=""><i class="zmdi zmdi-google"></i></a>
+                        </li-->
+
+                        <li class="pull-right hidden-xs"><span><i class="zmdi zmdi-email"></i>hello@superbet.asia</span></li>
+                        <!--li class="pull-right hidden-xs"><span><i class="zmdi zmdi-phone"></i>001</span></li-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__main">
+                <div class="container">
+                    <a class="logo" href="index.html">
+                        <img src="img/logo.png" alt="">
+                        <div class="logo__text">
+                            <span>SuperBet</span>
+                            <span>Leading supplier of sports betting data.</span>
+                        </div>
+                    </a>
+
+                    <div class="navigation-trigger visible-xs visible-sm" data-rmd-action="block-open" data-rmd-target=".navigation">
+                        <i class="zmdi zmdi-menu"></i>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="active"><a href="404.html">Products</a></li>
+                        <li class=""><a href="404.html">Pricing</a></li>
+                        <li class=""><a href="404.html">Documentation</a></li>
+                        <li class=""><a href="404.html">Support</a></li>
+                        <li class="visible-xs visible-sm"><a class="navigation__close" data-rmd-action="navigation-close" href=""><i class="zmdi zmdi-long-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__recommended">
+	            <div class="top_header">
+		            <img src="http://omfixive2.bkt.clouddn.com/top_img_da@2x.png" />
+		            <h1>数据资讯</h1>
+		            <hr/>
+		            <p>涵盖盘赔、基本面、爆料、预测等多方位数据，资讯服务贯穿赛前、赛中、赛后。</p>
+		            <button class="btn btn-outline btn-lg">了解更多</button>
+	            </div>
+
+            </div>
+
+            <div class="my-location">
+				<div class="my-location__title"><i class="zmdi zmdi-info-outline"></i> 接口安全升级，请iOS开发者补全BundleID信息</div>
+            </div>
+        </header>
+        <section class="section">
+          <div class="container">
+            <div class="card">
+				<div id="serversort" class="tab-nav tab-nav--justified" data-rmd-breakpoint="650">
+					<div class="tab-nav__inner">
+						<ul>
+							<li class=""><a href="index.html">彩票服务</a></li>
+							<li class=""><a href="game.html">竞猜游戏</a></li>
+							<li class="active"><a href="data.html">数据资讯</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="card products_list">
+					<ul class="grid-widget">
+						<li class="col-sm-3"><a><img src="http://omfixive2.bkt.clouddn.com/da_sp@2x.png" /><h4>赔率盘口</h4><p>多家国外顶尖博彩公司实时赔率盘口汇总，先人一步拿到最新动态</p></a></li>
+						<li class="col-sm-3"><a><img src="http://omfixive2.bkt.clouddn.com/da_hs@2x.png" /><h4>战绩交锋</h4><p>球队历史战绩、交锋战绩、未来赛程安排一览无余</p></a></li>
+						<li class="col-sm-3"><a><img src="http://omfixive2.bkt.clouddn.com/da_to@2x.png" /><h4>赛事排行</h4><p>赛事排行榜、积分榜，更新及时、数据准确</p></a></li>
+						<li class="col-sm-3"><a><img src="http://omfixive2.bkt.clouddn.com/da_cd@2x.png" /><h4>出场阵容</h4><p>收发阵容、振兴消息及时准确</p></a></li>
+					</ul>
+					</div>
+				</div>
+          	</div>
+          </div>
+        </section>
+
+        <footer id="footer" style="padding-top:0;">
+            <div class="footer__bottom">
+                <div class="container">
+                    <span class="footer__copyright">&copy <a href="http://superbet.asia">SuperBet</a></span>
+
+                    <a href="404.html">About Us</a>
+                    <a href="404.html">Terms & Conditions</a>
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Careers</a>
+                    <a href="404.html">Agent Login</a>
+                </div>
+
+                <div class="footer__to-top" data-rmd-action="scroll-to" data-rmd-target="html">
+                    <i class="zmdi zmdi-chevron-up"></i>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1>Warning!!</h1>
+                <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+                <div class="ie-warning__inner">
+                    <ul class="ie-warning__download">
+                        <li>
+                            <a href="http://www.google.com/chrome/">
+                                <img src="img/browsers/chrome.png" alt="">
+                                <div>Chrome</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.mozilla.org/en-US/firefox/new/">
+                                <img src="img/browsers/firefox.png" alt="">
+                                <div>Firefox</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.opera.com">
+                                <img src="img/browsers/opera.png" alt="">
+                                <div>Opera</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/safari/">
+                                <img src="img/browsers/safari.png" alt="">
+                                <div>Safari</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                                <img src="img/browsers/ie.png" alt="">
+                                <div>IE (New)</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>Sorry for the inconvenience!</p>
+            </div>
+        <![endif]-->
+
+        <!-- Javascript -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+        <script src="vendors/bower_components/slick-carousel/slick/slick.min.js"></script>
+        <script src="vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
+        <!--[if IE 9 ]>
+            <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+        <![endif]-->
+        <script src="js/app.min.js"></script>
+        <script src="js/sp/sp.js"></script>        
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93184113-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    </body>
+</html>
